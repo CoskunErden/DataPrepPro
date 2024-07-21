@@ -1,4 +1,4 @@
-# DataPrepToolkit
+# DataPrepPro
 
 A package for data cleaning, feature engineering, and visualizing data properties.
 
@@ -6,7 +6,7 @@ A package for data cleaning, feature engineering, and visualizing data propertie
 
 You can install the package using pip:
 
-pip install git+https://github.com/CoskunErden/DataPrepToolkit.git
+pip install git+https://github.com/CoskunErden/DataPrepPro.git
 
 Usage
 
@@ -14,7 +14,7 @@ Data Cleaning and Visualization
 
 Showing Missing Values
 
-from DataPrepToolkit.data_cleaning import DataCleaner
+from DataPrepPro.data_cleaning import DataCleaner
 import pandas as pd
 
 # Sample dataframe
@@ -61,7 +61,7 @@ filled_df = cleaner.fill_missing_values(strategy='mean')
 Feature Engineering and Visualization
 Plotting Feature Distributions
 
-from DataPrepToolkit.feature_engineering import FeatureEngineer
+from DataPrepPro.feature_engineering import FeatureEngineer
 import pandas as pd
 
 # Sample dataframe
@@ -89,7 +89,7 @@ normalized_df = engineer.normalize_features(columns=['B'])
 Utility Functions
 Loading and Saving Data
 
-from DataPrepToolkit.utils import load_data, save_data
+from DataPrepPro.utils import load_data, save_data
 import pandas as pd
 
 # Load data from a CSV file
@@ -101,7 +101,7 @@ save_data(df, 'data_saved.csv')
 
 Logging
 
-from DataPrepToolkit.utils import setup_logging, log
+from DataPrepPro.utils import setup_logging, log
 
 # Set up logging
 setup_logging('app.log')
@@ -114,7 +114,7 @@ log('This is an error message.', level='error')
 
 Calculating Missing Values Percentage
 
-from DataPrepToolkit.utils import calculate_missing_values_percentage
+from DataPrepPro.utils import calculate_missing_values_percentage
 
 # Sample dataframe
 df = pd.DataFrame({
